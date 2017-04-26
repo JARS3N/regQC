@@ -4,6 +4,6 @@ runOligoFolder<-function(D){
   file.copy(system.file(package = 'regQC',"oligoIC50template.pzf"),D)
   depositPZC(D)
   shell.exec('oligoScript.PZC')
-  system2("taskkill",args=c("/f","/im",'prism.exe'))
+  #system2("taskkill",args=c("/f","/im",'prism.exe'))
 }
 
