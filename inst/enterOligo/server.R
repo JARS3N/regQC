@@ -1,10 +1,11 @@
 library(shiny)
 shinyServer(function(input, output) {
    observeEvent(input$GO,{
+      D<-choose.dir()
      if(input$cb==TRUE){
-        regQC::Outandsave(input$GO)
+        regQC::Outandsave(D)
         }
-     if(!is.null(input$GO)){
+     if(!is.null(D)){
      regQC::runOligoFolder()
      }
      })
