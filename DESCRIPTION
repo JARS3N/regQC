@@ -6,7 +6,8 @@ Author: ---------
 Maintainer:  <yourself@somewhere.net>
 Description: analysis scripts
 Imports:  dplyr,
-          readxl
+          readxl,
+          shiny
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
