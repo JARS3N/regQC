@@ -6,7 +6,7 @@ shinyServer(function(input, output) {
         regQC::Outandsave(D)
         }
      if(!is.null(D)){
-     regQC::runOligoFolder()
+     regQC::runOligoFolder(D)
      }
      })
 })
