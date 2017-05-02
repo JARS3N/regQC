@@ -31,6 +31,7 @@ GetBlocks<-function(U){
 }
   read_excel(fl,sheet='Rate') %>%
   filter(.,Measurement==4) %>%
+  mutate(.,OCR=set0(OCR,grepl("outlier|background",tolower(Group)))) %>%
   dplyr::select(.,Well,OCR) %>%
   mutate(.,COL=gsub('[A-Z]',"",Well) %>% as.numeric()) %>%
   mutate(.,ROW=gsub('[0-9]',"",Well)) %>%
