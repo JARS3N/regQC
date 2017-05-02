@@ -22,7 +22,7 @@ exportXL<-function(path_in){
 Outandsave<-function(path_in=getwd()){
   n<-length(list.files(path=path_in,pattern='.asyr'))
   if (n>0){
-  PipeFish::exportXL(path_in);
-  PipeFish::XLos(path_in)
+  regQC::exportXL(path_in);
+ regQC::XLos(path_in)
   }
 }
