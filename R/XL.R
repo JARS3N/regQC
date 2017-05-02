@@ -2,7 +2,7 @@ XLos<-function(u=getwd()){
 system(paste0(
 "Cscript",
 " ",
-shQuote(normalizePath(system.file("/vbs/XLOSC.vbs", package="PipeFish"))),
+shQuote(normalizePath(system.file("/vbs/XLOSC.vbs", package="regQC"))),
 " ",
 shQuote(normalizePath(u))
 ))
