@@ -15,7 +15,8 @@ script<-c(
 'Wtable "Kit 2", 5, 2',
 'Wtable "Kit 3", 5, 3',
 'Wtable "Control", 5, 4',
-'Next'
+'Next',
+ 'Save "oligoIC50Template.pzf"'
 )
 out<-paste0(sapply(script,paste,"\n"),collapse="")
 writeBin(charToRaw(out),"oligoScript.PZC")
