@@ -1,7 +1,7 @@
 ### create przm script
 depositPZC<-function(dir){
 script<-c(
-  paste0("SetPath ",normalizePath(getwd())),
+  paste0("SetPath ",normalizePath(dir)),
 'OpenOutput oligoIC50.csv' ,
 'Table CSV',
 'Open "oligoIC50Template.pzf"',
@@ -18,6 +18,6 @@ script<-c(
 'Next',
  'Save "oligoIC50Template.pzf"'
 )
-out<-paste0(sapply(script,paste,"\n"),collapse="")
+out<-paste0(script,collapse="\n")
 writeBin(charToRaw(out),"oligoScript.PZC")
 }
